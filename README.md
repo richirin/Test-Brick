@@ -7,8 +7,10 @@ Automation with Codeceptjs, Dotenv, Faker for random the input, and mochawesome 
 
 ## How To run the automation
 clone the repo and open on editor, then open the terminal and do npm install
-```npm i
+```
+npm i
 ```
 and running the code with this comand
-```npm run codeceptjs
+```
+npm run codeceptjs
 ```
