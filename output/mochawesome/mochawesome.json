@@ -1,16 +1,16 @@
 {
   "stats": {
     "suites": 2,
-    "tests": 3,
+    "tests": 2,
     "passes": 2,
-    "pending": 1,
+    "pending": 0,
     "failures": 0,
-    "start": "2022-03-26T06:02:16.892Z",
-    "end": "2022-03-26T06:02:30.013Z",
-    "duration": 13121,
-    "testsRegistered": 3,
+    "start": "2022-03-27T08:01:59.177Z",
+    "end": "2022-03-27T08:02:11.231Z",
+    "duration": 12054,
+    "testsRegistered": 2,
     "passPercent": 100,
-    "pendingPercent": 33.33333333333333,
+    "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "049640fe-e8cc-4f62-aea7-b12aa484dbf1",
+      "uuid": "46c95e07-2123-4101-8156-560c35751c37",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,16 +27,16 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "4d6f6d9e-ba3e-4fa3-94c9-a9c3ba722c35",
+          "uuid": "5d5b7614-42ab-455b-a52a-92d5886fc015",
           "title": "Register",
-          "fullFile": "C:\\Users\\IMBA PC\\Desktop\\Brick_QAE_Assessment_Richi_Ramadhan\\tests\\001_registration_test.js",
+          "fullFile": "C:\\Users\\IMBA PC\\Documents\\GitHub\\Test-Brick\\tests\\001_registration_test.js",
           "file": "\\tests\\001_registration_test.js",
           "beforeHooks": [
             {
               "title": "\"before all\" hook: codeceptjs.beforeSuite in \"Register\"",
               "fullTitle": "Register \"before all\" hook: codeceptjs.beforeSuite in \"Register\"",
               "timedOut": false,
-              "duration": 422,
+              "duration": 487,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "scenario.suiteSetup(suite)",
               "err": {},
-              "uuid": "5ed39750-f48d-4f23-a3a6-c6fc8b5fc825",
-              "parentUUID": "4d6f6d9e-ba3e-4fa3-94c9-a9c3ba722c35",
+              "uuid": "3eed4f39-5c61-436f-9019-54491829661d",
+              "parentUUID": "5d5b7614-42ab-455b-a52a-92d5886fc015",
               "isHook": true,
               "skipped": false
             },
@@ -54,7 +54,7 @@
               "title": "\"before each\" hook: codeceptjs.before in \"Register\"",
               "fullTitle": "Register \"before each\" hook: codeceptjs.before in \"Register\"",
               "timedOut": false,
-              "duration": 103,
+              "duration": 115,
               "state": null,
               "speed": null,
               "pass": false,
@@ -63,8 +63,8 @@
               "context": null,
               "code": "scenario.setup(suite)",
               "err": {},
-              "uuid": "3e079993-9a67-4689-9c29-f06bbdbee112",
-              "parentUUID": "4d6f6d9e-ba3e-4fa3-94c9-a9c3ba722c35",
+              "uuid": "1dfa7db2-9d55-4b4a-bb03-ea754d32faa4",
+              "parentUUID": "5d5b7614-42ab-455b-a52a-92d5886fc015",
               "isHook": true,
               "skipped": false
             }
@@ -83,8 +83,8 @@
               "context": null,
               "code": "scenario.suiteTeardown(suite)",
               "err": {},
-              "uuid": "7fff1f42-2b8e-4f14-a69d-56729a68893b",
-              "parentUUID": "4d6f6d9e-ba3e-4fa3-94c9-a9c3ba722c35",
+              "uuid": "b7da7c2a-c7f5-4b18-8de6-38ad73abf387",
+              "parentUUID": "5d5b7614-42ab-455b-a52a-92d5886fc015",
               "isHook": true,
               "skipped": false
             },
@@ -92,7 +92,7 @@
               "title": "\"after each\" hook: finalize codeceptjs in \"Register\"",
               "fullTitle": "Register \"after each\" hook: finalize codeceptjs in \"Register\"",
               "timedOut": false,
-              "duration": 54,
+              "duration": 26,
               "state": null,
               "speed": null,
               "pass": false,
@@ -101,8 +101,8 @@
               "context": null,
               "code": "scenario.teardown(suite)",
               "err": {},
-              "uuid": "6c37e38a-9284-4d25-bfd7-93fbeb33fffc",
-              "parentUUID": "4d6f6d9e-ba3e-4fa3-94c9-a9c3ba722c35",
+              "uuid": "abbaedf6-ee12-47bc-8040-544f8fb3b75f",
+              "parentUUID": "5d5b7614-42ab-455b-a52a-92d5886fc015",
               "isHook": true,
               "skipped": false
             }
@@ -112,57 +112,37 @@
               "title": "Registering With valid data",
               "fullTitle": "Register: Registering With valid data",
               "timedOut": false,
-              "duration": 6535,
+              "duration": 5510,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "I }) => {\n    const email = faker.internet.email()\n    I.amOnPage(\"\")\n    // Input Username\n    I.waitForVisible(\"#firstName\", process.env.TIMEOUT)\n    I.fillField(\"#firstName\", \"Richi\")\n    // Input Password\n    I.waitForVisible(\"#lastName\", process.env.TIMEOUT)\n    I.fillField(\"#lastName\", \"Ramadhan\")\n    // Input Email\n    I.waitForVisible(\"#email\", process.env.TIMEOUT)\n    I.fillField(\"#email\", verifiedEmail)\n    // Input Phone Number\n    I.waitForVisible(\"#phoneNumber\", process.env.TIMEOUT)\n    I.fillField(\"#phoneNumber\", faker.phone.phoneNumber('+62#########'))\n    // Input Address\n    I.waitForVisible(\"#address\", process.env.TIMEOUT)\n    I.fillField(\"#address\", \"addresss\")\n    // Input Password\n    I.waitForVisible(\"#password\", process.env.TIMEOUT)\n    I.fillField(\"#password\", \"password\")\n    // Input Confirm Password\n    I.waitForVisible(\"#confirm_password\", process.env.TIMEOUT)\n    I.fillField(\"#confirm_password\", \"password\")\n    // Click Regist\n    I.waitForVisible({name : \"register\"}, process.env.TIMEOUT)\n    I.click({name : \"register\"})\n    // verify \n    I.waitForText(\"Success\")",
+              "code": "I }) => {\n    I.amOnPage(\"\")\n    // Input Username\n    I.waitForVisible(\"#firstName\", process.env.TIMEOUT)\n    I.fillField(\"#firstName\", \"Richi\")\n    // Input Password\n    I.waitForVisible(\"#lastName\", process.env.TIMEOUT)\n    I.fillField(\"#lastName\", \"Ramadhan\")\n    // Input Email\n    I.waitForVisible(\"#email\", process.env.TIMEOUT)\n    I.fillField(\"#email\", email)\n    // Input Phone Number\n    I.waitForVisible(\"#phoneNumber\", process.env.TIMEOUT)\n    I.fillField(\"#phoneNumber\", faker.phone.phoneNumber('+62#########'))\n    // Input Address\n    I.waitForVisible(\"#address\", process.env.TIMEOUT)\n    I.fillField(\"#address\", \"addresss\")\n    // Input Password\n    I.waitForVisible(\"#password\", process.env.TIMEOUT)\n    I.fillField(\"#password\", \"password\")\n    // Input Confirm Password\n    I.waitForVisible(\"#confirm_password\", process.env.TIMEOUT)\n    I.fillField(\"#confirm_password\", \"password\")\n    // Click Regist\n    I.waitForVisible({name : \"register\"}, process.env.TIMEOUT)\n    I.click({name : \"register\"})\n    // verify \n    I.waitForText(\"Success\")",
               "err": {},
-              "uuid": "dec79395-bd9e-4c3b-b864-cfc883916bfa",
-              "parentUUID": "4d6f6d9e-ba3e-4fa3-94c9-a9c3ba722c35",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Verified the email",
-              "fullTitle": "Register: Verified the email",
-              "timedOut": false,
-              "duration": 0,
-              "state": "pending",
-              "speed": null,
-              "pass": false,
-              "fail": false,
-              "pending": true,
-              "context": null,
-              "code": "",
-              "err": {},
-              "uuid": "66f23903-6417-4467-ad13-b4296de316ea",
-              "parentUUID": "4d6f6d9e-ba3e-4fa3-94c9-a9c3ba722c35",
+              "uuid": "aa3e159c-b396-4f79-9ee1-d05a77203386",
+              "parentUUID": "5d5b7614-42ab-455b-a52a-92d5886fc015",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "dec79395-bd9e-4c3b-b864-cfc883916bfa"
+            "aa3e159c-b396-4f79-9ee1-d05a77203386"
           ],
           "failures": [],
-          "pending": [
-            "66f23903-6417-4467-ad13-b4296de316ea"
-          ],
+          "pending": [],
           "skipped": [],
-          "duration": 6535,
+          "duration": 5510,
           "root": false,
           "rootEmpty": false,
           "_timeout": 0
         },
         {
-          "uuid": "0a8fb57e-7e1b-435c-9679-0c19c2611201",
+          "uuid": "b58d6d7d-1b95-4cef-a8da-e1c249d3aaec",
           "title": "Login",
-          "fullFile": "C:\\Users\\IMBA PC\\Desktop\\Brick_QAE_Assessment_Richi_Ramadhan\\tests\\002_login_test.js",
+          "fullFile": "C:\\Users\\IMBA PC\\Documents\\GitHub\\Test-Brick\\tests\\002_login_test.js",
           "file": "\\tests\\002_login_test.js",
           "beforeHooks": [
             {
@@ -178,8 +158,8 @@
               "context": null,
               "code": "scenario.suiteSetup(suite)",
               "err": {},
-              "uuid": "b2c18a0f-7a1d-4302-8df6-176abcfaa2d3",
-              "parentUUID": "0a8fb57e-7e1b-435c-9679-0c19c2611201",
+              "uuid": "017d09bb-9a29-4cef-8234-e1d97d6e4f01",
+              "parentUUID": "b58d6d7d-1b95-4cef-a8da-e1c249d3aaec",
               "isHook": true,
               "skipped": false
             },
@@ -187,7 +167,7 @@
               "title": "\"before each\" hook: codeceptjs.before in \"Login\"",
               "fullTitle": "Login \"before each\" hook: codeceptjs.before in \"Login\"",
               "timedOut": false,
-              "duration": 81,
+              "duration": 101,
               "state": null,
               "speed": null,
               "pass": false,
@@ -196,8 +176,8 @@
               "context": null,
               "code": "scenario.setup(suite)",
               "err": {},
-              "uuid": "a99d70d4-9400-4985-b554-f16c05c36aec",
-              "parentUUID": "0a8fb57e-7e1b-435c-9679-0c19c2611201",
+              "uuid": "fb6b51ef-1eaf-42e5-af77-f9c193407a32",
+              "parentUUID": "b58d6d7d-1b95-4cef-a8da-e1c249d3aaec",
               "isHook": true,
               "skipped": false
             }
@@ -216,8 +196,8 @@
               "context": null,
               "code": "scenario.suiteTeardown(suite)",
               "err": {},
-              "uuid": "f0e2decf-77a2-4828-99ee-882d18f656a0",
-              "parentUUID": "0a8fb57e-7e1b-435c-9679-0c19c2611201",
+              "uuid": "87ff4c42-8f0b-4e2d-9347-21628cff4c03",
+              "parentUUID": "b58d6d7d-1b95-4cef-a8da-e1c249d3aaec",
               "isHook": true,
               "skipped": false
             },
@@ -225,7 +205,7 @@
               "title": "\"after each\" hook: finalize codeceptjs in \"Login\"",
               "fullTitle": "Login \"after each\" hook: finalize codeceptjs in \"Login\"",
               "timedOut": false,
-              "duration": 22,
+              "duration": 71,
               "state": null,
               "speed": null,
               "pass": false,
@@ -234,8 +214,8 @@
               "context": null,
               "code": "scenario.teardown(suite)",
               "err": {},
-              "uuid": "2f19c662-02a6-46ee-814b-4a56145e7c05",
-              "parentUUID": "0a8fb57e-7e1b-435c-9679-0c19c2611201",
+              "uuid": "1e36e1fd-3ebe-4878-b648-5e929efba75f",
+              "parentUUID": "b58d6d7d-1b95-4cef-a8da-e1c249d3aaec",
               "isHook": true,
               "skipped": false
             }
@@ -245,29 +225,29 @@
               "title": "Login With valid data",
               "fullTitle": "Login: Login With valid data",
               "timedOut": false,
-              "duration": 5898,
+              "duration": 5738,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "I }) => {\n    I.amOnPage(\"login\")\n    // Input Username\n    console.log(process.env.TIMEOUT)\n    I.waitForVisible(\"#your_email\", process.env.TIMEOUT)\n    I.fillField(\"#your_email\", \"poiqwe1234524@gmail.com\")\n    // Input Password\n    I.waitForVisible(\"#password\", process.env.TIMEOUT)\n    I.fillField(\"#password\", \"password\")\n    // Click Submit\n    I.waitForVisible({ name: \"login\" })\n    I.click({ name: \"login\" })\n    // Verify Success message is appear\n    I.waitForText(\"Success\", process.env.TIMEOUT)",
+              "code": "I }) => {\n    I.amOnPage(\"login\")\n    // Input Username\n    I.waitForVisible(\"#your_email\", process.env.TIMEOUT)\n    I.fillField(\"#your_email\", email)\n    // Input Password\n    I.waitForVisible(\"#password\", process.env.TIMEOUT)\n    I.fillField(\"#password\", \"password\")\n    // Click Submit\n    I.waitForVisible({ name: \"login\" })\n    I.click({ name: \"login\" })\n    // Verify Success message is appear\n    I.waitForText(\"Success\", process.env.TIMEOUT)",
               "err": {},
-              "uuid": "3af9ee05-d58b-4948-9808-f6808051c384",
-              "parentUUID": "0a8fb57e-7e1b-435c-9679-0c19c2611201",
+              "uuid": "30e6b1b6-29f6-4c06-83dc-e3194708b3c4",
+              "parentUUID": "b58d6d7d-1b95-4cef-a8da-e1c249d3aaec",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3af9ee05-d58b-4948-9808-f6808051c384"
+            "30e6b1b6-29f6-4c06-83dc-e3194708b3c4"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5898,
+          "duration": 5738,
           "root": false,
           "rootEmpty": false,
           "_timeout": 0
@@ -285,7 +265,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "8.1.3"
+      "version": "9.2.2"
     },
     "mochawesome": {
       "options": {
